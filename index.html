@@ -2,595 +2,41 @@
 <html lang="en">
 
 <head>
-    <!-- CHARACTER ENCODING -->
     <meta charset="UTF-8">
-    <!-- RESPONSIVE VIEWPORT -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- PAGE TITLE -->
     <title>Rahat — Full Stack Developer</title>
-
-    <!-- GOOGLE FONTS: preconnect for faster font loading -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <!-- GOOGLE FONTS: Bricolage Grotesque, Inter, JetBrains Mono -->
     <link
         href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap"
         rel="stylesheet">
-    <!-- DEVICON: icon font for tech/tool logos -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/devicon/2.17.0/devicon.min.css">
-    <!-- CUSTOM STYLESHEET -->
     <link rel="stylesheet" href="./style.css">
 </head>
 
+<body>
 
-<div class="grid-overlay"></div>
-<div class="spotlight" id="spotlight"></div>
-<div class="blob blob-1"></div>
-<div class="blob blob-2"></div>
-<div class="blob blob-3"></div>
-<div class="blob blob-4"></div>
-<div class="particles" id="particles"></div>
-<div class="noise"></div>
+    <div class="grid-overlay"></div>
+    <div class="spotlight" id="spotlight"></div>
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="blob blob-3"></div>
+    <div class="blob blob-4"></div>
+    <div class="particles" id="particles"></div>
+    <div class="noise"></div>
 
-<!-- NAVIGATION BAR -->
-<nav>
-    <div class="nav-inner">
-        <a href="#home" class="brand">
-            <svg class="brand-logo" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                <defs>
-                    <linearGradient id="brandGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-                        <stop offset="0%" stop-color="#7C74EC" />
-                        <stop offset="45%" stop-color="#4EA8FF" />
-                        <stop offset="100%" stop-color="#22D3EE" />
-                    </linearGradient>
-                </defs>
-                <rect x="1" y="1" width="30" height="30" rx="9" fill="url(#brandGrad)" />
-                <path d="M12 11 8 16l4 5" stroke="#0A0E1A" stroke-width="2.3" stroke-linecap="round"
-                    stroke-linejoin="round" fill="none" />
-                <path d="M20 11l4 5-4 5" stroke="#0A0E1A" stroke-width="2.3" stroke-linecap="round"
-                    stroke-linejoin="round" fill="none" />
-                <path d="M17.5 9.5 14.5 22.5" stroke="#0A0E1A" stroke-width="2.1" stroke-linecap="round" fill="none" />
-            </svg>
-            <span class="brand-name"><span class="brand-bracket">&lt;</span>Rahat<span
-                    class="brand-bracket">/&gt;</span></span><span class="brand-status-wrap"><i
-                    class="brand-status"></i></span>
-        </a>
-        <ul class="nav-links">
-            <li><a href="#stack">Stack</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#tools">Tools</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#tour">Tour</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-        <a href="#contact" class="nav-cta">Let's talk</a>
-        <button class="theme-toggle" id="themeToggle" type="button" aria-label="Toggle night mode" aria-pressed="false">
-            <svg class="icon-moon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-                <path d="M21.64 13a9 9 0 1 1-10.63-10.6 1 1 0 0 1 1.08 1.44A7 7 0 0 0 20.2 12.9a1 1 0 0 1 1.44 1.08Z" />
-            </svg>
-            <svg class="icon-sun" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-                <circle cx="12" cy="12" r="4.2" />
-                <g stroke="currentColor" stroke-width="1.8" stroke-linecap="round">
-                    <path
-                        d="M12 2v2.4M12 19.6V22M22 12h-2.4M4.4 12H2M19 5l-1.7 1.7M6.7 17.3 5 19M19 19l-1.7-1.7M6.7 6.7 5 5" />
-                </g>
-            </svg>
-        </button>
-        <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false"
-            aria-controls="mobileNav">
-            <span></span>
-        </button>
-    </div>
-    <div class="mobile-nav" id="mobileNav">
-        <div class="mobile-nav-inner">
-            <a href="#stack">Stack</a>
-            <a href="#about">About</a>
-            <a href="#services">Services</a>
-            <a href="#tools">Tools</a>
-            <a href="#projects">Projects</a>
-            <a href="#tour">Tour</a>
-            <a href="#contact">Contact</a>
-            <a href="#contact" class="nav-cta">Let's talk</a>
-        </div>
-    </div>
-</nav>
-
-<!-- HERO SECTION -->
-<header class="hero" id="home">
-    <div class="wrap hero-grid">
-        <div>
-            <div class="eyebrow"><span class="dot"></span> AVAILABLE FOR WORK · OPEN TO REMOTE, WORLDWIDE</div>
-            <h1 class="name">Hi, I'm <span class="grad">Rahat</span><br>I build full stack products.</h1>
-            <p class="hero-tagline">A <span class="role-cycle">full stack developer</span> who designs, builds and
-                ships web
-                applications end to end — from <span style="color:var(--text)">database schema</span> to
-                <span style="color:var(--text)">pixel-perfect interface</span>. Replace this line with your own
-                story.
-            </p>
-            <div class="hero-actions">
-                <a href="#projects" class="btn-primary">View my work →</a>
-                <a href="#" class="btn-ghost">Download Resume</a>
-            </div>
-            <div class="socials">
-                <a href="https://github.com/Rahat-Karim5452" aria-label="GitHub"><svg viewBox="0 0 24 24"
-                        fill="currentColor">
-                        <path
-                            d="M12 .5C5.73.5.5 5.73.5 12c0 5.08 3.29 9.39 7.86 10.91.57.11.78-.25.78-.55 0-.27-.01-1.16-.02-2.11-3.2.7-3.88-1.36-3.88-1.36-.52-1.33-1.28-1.69-1.28-1.69-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.18 1.76 1.18 1.03 1.76 2.69 1.25 3.35.96.1-.75.4-1.25.73-1.54-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.29 1.18-3.09-.12-.29-.51-1.46.11-3.05 0 0 .96-.31 3.15 1.18a10.9 10.9 0 0 1 5.74 0c2.19-1.49 3.15-1.18 3.15-1.18.62 1.59.23 2.76.11 3.05.74.8 1.18 1.83 1.18 3.09 0 4.42-2.69 5.39-5.25 5.68.41.36.78 1.08.78 2.17 0 1.56-.01 2.82-.01 3.2 0 .3.2.67.79.55A10.51 10.51 0 0 0 23.5 12C23.5 5.73 18.27.5 12 .5Z" />
-                    </svg></a>
-                <a href="https://www.linkedin.com/in/rahat-karim" aria-label="LinkedIn"><svg viewBox="0 0 24 24"
-                        fill="currentColor">
-                        <path
-                            d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.03-1.85-3.03-1.86 0-2.14 1.45-2.14 2.94v5.66H9.36V9h3.41v1.56h.05c.47-.9 1.63-1.85 3.36-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29ZM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12ZM7.12 20.45H3.56V9h3.56v11.45Z" />
-                    </svg></a>
-                <a href="https://www.facebook.com/share/19wnUYCAc4/" target="_blank" rel="noopener"
-                    aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor">
-                        <path
-                            d="M22 12.06C22 6.5 17.52 2 12 2S2 6.5 2 12.06c0 5.02 3.66 9.18 8.44 9.94v-7.03H7.9v-2.91h2.54V9.85c0-2.51 1.49-3.9 3.77-3.9 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56v1.89h2.78l-.44 2.91h-2.34V22c4.78-.76 8.44-4.92 8.44-9.94Z" />
-                    </svg></a>
-                <a href="https://x.com/KarimRahat10325" target="_blank" rel="noopener" aria-label="X (Twitter)"><svg
-                        viewBox="0 0 24 24" fill="currentColor">
-                        <path
-                            d="M18.9 2H22l-7.6 8.7L23.3 22h-7.1l-5.5-7.2L4.4 22H1.3l8.2-9.3L1 2h7.3l5 6.6L18.9 2Zm-1.25 18h1.75L7.5 3.9H5.6L17.65 20Z" />
-                    </svg></a>
-                <a href="mailto:rahatkarim5452@gmail.com" aria-label="Email"><svg viewBox="0 0 24 24"
-                        fill="currentColor">
-                        <path
-                            d="M2 4h20a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1Zm19 3.24-8.36 6.1a1 1 0 0 1-1.18 0L3 7.24V19h18V7.24ZM3.4 5l8.6 6.28L20.6 5H3.4Z" />
-                    </svg></a>
-            </div>
-        </div>
-
-        <div class="hero-photo-wrap">
-            <div class="photo-glow"></div>
-            <div class="photo-frame">
-                <img src="./images/profile.jpeg" alt="Rahat">
-            </div>
-            <div class="chip chip-1">React</div>
-            <div class="chip chip-2">Node.js</div>
-            <div class="chip chip-3">PostgreSQL</div>
-        </div>
-    </div>
-</header>
-
-<!-- TECH STACK SECTION -->
-<section id="stack">
-    <div class="wrap">
-        <div class="sec-head">
-            <div class="eyebrow"><span class="dot"></span> HOW I'M BUILT</div>
-            <h2>The stack, layer by layer.</h2>
-            <p>Every full stack app is exactly that — a stack. Here's what sits in each layer of mine, top to
-                bottom.</p>
-        </div>
-
-        <div class="stack">
-            <div class="layer layer-1">
-                <div class="layer-label">
-                    <span class="layer-idx">LAYER 01 — WHAT USERS SEE</span>
-                    <span class="layer-name">Frontend</span>
-                </div>
-                <div class="layer-techs">
-                    <span class="tech-pill">React</span>
-                    <span class="tech-pill">Next.js</span>
-                    <span class="tech-pill">TypeScript</span>
-                    <span class="tech-pill">Tailwind CSS</span>
-                    <span class="tech-pill">Redux</span>
-                </div>
-            </div>
-            <div class="layer layer-2">
-                <div class="layer-label">
-                    <span class="layer-idx">LAYER 02 — WHERE LOGIC LIVES</span>
-                    <span class="layer-name">Backend</span>
-                </div>
-                <div class="layer-techs">
-                    <span class="tech-pill">Node.js</span>
-                    <span class="tech-pill">Express</span>
-                    <span class="tech-pill">REST APIs</span>
-                    <span class="tech-pill">GraphQL</span>
-                </div>
-            </div>
-            <div class="layer layer-3">
-                <div class="layer-label">
-                    <span class="layer-idx">LAYER 03 — WHERE DATA LIVES</span>
-                    <span class="layer-name">Database</span>
-                </div>
-                <div class="layer-techs">
-                    <span class="tech-pill">PostgreSQL</span>
-                    <span class="tech-pill">MongoDB</span>
-                    <span class="tech-pill">Redis</span>
-                    <span class="tech-pill">Prisma</span>
-                </div>
-            </div>
-            <div class="layer layer-4">
-                <div class="layer-label">
-                    <span class="layer-idx">LAYER 04 — HOW IT SHIPS</span>
-                    <span class="layer-name">DevOps</span>
-                </div>
-                <div class="layer-techs">
-                    <span class="tech-pill">Docker</span>
-                    <span class="tech-pill">GitHub Actions</span>
-                    <span class="tech-pill">AWS</span>
-                    <span class="tech-pill">Vercel</span>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- ABOUT SECTION -->
-<section id="about">
-    <div class="wrap about-grid">
-        <div>
-            <div class="eyebrow"><span class="dot"></span> ABOUT ME</div>
-            <h2
-                style="font-family:'Bricolage Grotesque',sans-serif;font-weight:800;font-size:clamp(1.9rem,3.4vw,2.6rem);margin-bottom:24px;letter-spacing:-.01em;">
-                A short version of my story.</h2>
-            <div class="about-text">
-                <p>Replace this paragraph with your own introduction. Talk about <strong>how you got into web
-                        development</strong>, what kind of problems you enjoy solving, and the type of products you
-                    like building — from idea to production.</p>
-                <p>Mention the <strong>tools you reach for first</strong>, a project you're proud of, and what
-                    you're currently learning. Keep it honest and specific — recruiters and clients remember
-                    details, not buzzwords.</p>
-            </div>
-        </div>
-        <div class="stat-row">
-            <div class="stat"><b>3+</b><span>YEARS EXPERIENCE</span></div>
-            <div class="stat"><b>20+</b><span>PROJECTS SHIPPED</span></div>
-            <div class="stat"><b>10+</b><span>TECHNOLOGIES</span></div>
-        </div>
-    </div>
-</section>
-
-<!-- SERVICES SECTION -->
-<section id="services">
-    <div class="wrap">
-        <div class="sec-head">
-            <div class="eyebrow"><span class="dot"></span> WHAT I DO</div>
-            <h2>Services I offer.</h2>
-            <p>From first wireframe to production deploy — here's how I can help move your product forward.</p>
-        </div>
-        <div class="services-grid">
-            <div class="service-card">
-                <span class="service-num">01</span>
-                <div class="service-icon">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round">
-                        <polyline points="8 6 2 12 8 18"></polyline>
-                        <polyline points="16 6 22 12 16 18"></polyline>
-                    </svg>
-                </div>
-                <h3>Frontend Development</h3>
-                <p>Responsive, accessible interfaces built with React, Next.js and modern CSS — pixel-accurate and
-                    fast to load.</p>
-            </div>
-            <div class="service-card">
-                <span class="service-num">02</span>
-                <div class="service-icon">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round">
-                        <path d="M4 4h16v6H4z"></path>
-                        <path d="M4 14h16v6H4z"></path>
-                        <circle cx="8" cy="7" r=".6" fill="currentColor" stroke="none"></circle>
-                        <circle cx="8" cy="17" r=".6" fill="currentColor" stroke="none"></circle>
-                    </svg>
-                </div>
-                <h3>Backend &amp; APIs</h3>
-                <p>Node.js and Express services with clean REST or GraphQL APIs, auth, and sensible data modeling.
-                </p>
-            </div>
-            <div class="service-card">
-                <span class="service-num">03</span>
-                <div class="service-icon">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round">
-                        <ellipse cx="12" cy="5" rx="8" ry="3"></ellipse>
-                        <path d="M4 5v14c0 1.66 3.58 3 8 3s8-1.34 8-3V5"></path>
-                        <path d="M4 12c0 1.66 3.58 3 8 3s8-1.34 8-3"></path>
-                    </svg>
-                </div>
-                <h3>Full Stack Products</h3>
-                <p>End-to-end builds that connect frontend, backend and database into one coherent, maintainable
-                    product.</p>
-            </div>
-            <div class="service-card">
-                <span class="service-num">04</span>
-                <div class="service-icon">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round">
-                        <path d="M12 2 4 6v6c0 5 3.4 8.4 8 10 4.6-1.6 8-5 8-10V6l-8-4Z"></path>
-                        <path d="m9 12 2 2 4-4"></path>
-                    </svg>
-                </div>
-                <h3>Deployment &amp; DevOps</h3>
-                <p>Dockerized, CI/CD-backed deploys on AWS or Vercel — shipping code that stays shipped.</p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- TOOLS SECTION -->
-<section id="tools">
-    <div class="wrap">
-        <div class="sec-head">
-            <div class="eyebrow"><span class="dot"></span> UNDER THE HOOD</div>
-            <h2>Exploring the tools behind my design.</h2>
-            <p>The languages, frameworks and platforms I reach for when turning an idea into a working product.</p>
-        </div>
-        <div class="tools-grid">
-            <div class="tool-card" style="--delay:0s">
-                <i class="devicon-html5-plain colored tool-icon"></i>
-                <span>HTML5</span>
-            </div>
-            <div class="tool-card" style="--delay:.2s">
-                <i class="devicon-css3-plain colored tool-icon"></i>
-                <span>CSS3</span>
-            </div>
-            <div class="tool-card" style="--delay:.4s">
-                <i class="devicon-tailwindcss-plain colored tool-icon"></i>
-                <span>Tailwind CSS</span>
-            </div>
-            <div class="tool-card" style="--delay:.6s">
-                <i class="devicon-javascript-plain colored tool-icon"></i>
-                <span>JavaScript</span>
-            </div>
-            <div class="tool-card" style="--delay:.8s">
-                <i class="devicon-react-original colored tool-icon"></i>
-                <span>React</span>
-            </div>
-            <div class="tool-card" style="--delay:1s">
-                <i class="devicon-firebase-plain colored tool-icon"></i>
-                <span>Firebase</span>
-            </div>
-            <div class="tool-card" style="--delay:1.2s">
-                <i class="devicon-nodejs-plain colored tool-icon"></i>
-                <span>Node.js</span>
-            </div>
-            <div class="tool-card" style="--delay:1.4s">
-                <i class="devicon-express-original tool-icon tool-icon-invert"></i>
-                <span>Express.js</span>
-            </div>
-            <div class="tool-card" style="--delay:1.6s">
-                <i class="devicon-mongodb-plain colored tool-icon"></i>
-                <span>MongoDB</span>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- PROJECTS SECTION -->
-<section id="projects">
-    <div class="wrap">
-        <div class="sec-head">
-            <div class="eyebrow"><span class="dot"></span> SELECTED WORK</div>
-            <h2>Projects worth showing.</h2>
-            <p>A couple of builds worth a closer look — live and ready to explore.</p>
-        </div>
-        <div class="project-grid">
-            <div class="card">
-                <div class="card-cover cover-1"><img
-                        src="https://s.wordpress.com/mshots/v1/https%3A%2F%2Frahat-karim5452.github.io%2FAssignment-01-DevConf-2026%2F?w=600&h=400"
-                        alt="DevConf 2026 screenshot" loading="lazy"></div>
-                <div class="card-body">
-                    <h3>DevConf 2026</h3>
-                    <p>A conference landing page assignment focused on clean layout, responsive design, and polished
-                        UI details.</p>
-                    <div class="card-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
-                    <div class="card-links"><a href="https://rahat-karim5452.github.io/Assignment-01-DevConf-2026/"
-                            target="_blank" rel="noopener">Live site →</a><a
-                            href="https://github.com/Rahat-Karim5452/Assignment-01-DevConf-2026" target="_blank"
-                            rel="noopener">Source code →</a></div>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-cover cover-2"><img
-                        src="https://s.wordpress.com/mshots/v1/https%3A%2F%2Frahat-karim5452.github.io%2FMindCare-Project%2F?w=600&h=400"
-                        alt="MindCare screenshot" loading="lazy"></div>
-                <div class="card-body">
-                    <h3>MindCare</h3>
-                    <p>A mental wellness platform concept designed to make support and resources feel approachable
-                        and calm.</p>
-                    <div class="card-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
-                    <div class="card-links"><a href="https://rahat-karim5452.github.io/MindCare-Project/"
-                            target="_blank" rel="noopener">Live site →</a><a
-                            href="https://github.com/Rahat-Karim5452/MindCare-Project" target="_blank"
-                            rel="noopener">Source code →</a></div>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-cover cover-3"><img
-                        src="https://s.wordpress.com/mshots/v1/https%3A%2F%2Frahat-karim5452.github.io%2FBrewCorner-Cafe%2F?w=600&h=400"
-                        alt="BrewCorner Cafe screenshot" loading="lazy"></div>
-                <div class="card-body">
-                    <h3>BrewCorner Cafe</h3>
-                    <p>A cozy cafe website concept with a warm, inviting design showcasing a menu, atmosphere, and
-                        brand story.</p>
-                    <div class="card-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
-                    <div class="card-links"><a href="https://rahat-karim5452.github.io/BrewCorner-Cafe/" target="_blank"
-                            rel="noopener">Live site →</a><a href="https://github.com/Rahat-Karim5452/BrewCorner-Cafe"
-                            target="_blank" rel="noopener">Source code →</a></div>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-cover cover-4"><img
-                        src="https://s.wordpress.com/mshots/v1/https%3A%2F%2Frahat-karim5452.github.io%2FFIFA-WORLD-CUP-2026%2F?w=600&h=400"
-                        alt="FIFA World Cup 2026 screenshot" loading="lazy"></div>
-                <div class="card-body">
-                    <h3>FIFA World Cup 2026</h3>
-                    <p>A tournament-themed site built around the 2026 World Cup, featuring dynamic layout and
-                        event-driven design.</p>
-                    <div class="card-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
-                    <div class="card-links"><a href="https://rahat-karim5452.github.io/FIFA-WORLD-CUP-2026/"
-                            target="_blank" rel="noopener">Live site →</a><a
-                            href="https://github.com/Rahat-Karim5452/FIFA-WORLD-CUP-2026" target="_blank"
-                            rel="noopener">Source code →</a></div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- PROJECT TOUR / VIDEO SECTION -->
-<section id="tour">
-    <div class="wrap">
-        <div class="sec-head">
-            <div class="eyebrow"><span class="dot"></span> WATCH</div>
-            <h2>Take a quick tour.</h2>
-            <p>A short walkthrough covering who I am, what I build, and how I work.</p>
-        </div>
-        <div class="tour-wrap">
-            <div class="tour-video">
-                <!-- Option A: your own video file -->
-                <video controls poster="your-video-poster.jpg">
-                    <source src="your-tour-video.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
-
-                <!-- Option B: embed a YouTube video instead — delete the <video> block above
-                         and uncomment this iframe, replacing YOUR_VIDEO_ID
-                    <iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID"
-                        title="Portfolio tour video" allowfullscreen
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
-                    -->
-            </div>
-            <div class="tour-info">
-                <h3>What you'll see</h3>
-                <p>A quick, friendly walkthrough of my background, my process, and a peek at how I approach
-                    building full stack products.</p>
-                <ul class="tour-points">
-                    <li>Quick intro &amp; what I do</li>
-                    <li>How I approach a new project</li>
-                    <li>A look at a few builds in action</li>
-                </ul>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- CONTACT SECTION -->
-<section id="contact">
-    <div class="wrap">
-        <div class="sec-head">
-            <div class="eyebrow"><span class="dot"></span> GET IN TOUCH</div>
-            <h2>Let's talk for your next project.</h2>
-            <p>Share a few details below and what's on your mind — I read every message and reply within a day or
-                two.</p>
-        </div>
-        <div class="contact-grid">
-            <div class="contact-think">
-                <h3>How I think about a new project.</h3>
-                <p>Before any code gets written, here's the process I walk through with every client — so we're
-                    building the right thing, not just building fast.</p>
-                <div class="think-steps">
-                    <div class="think-step">
-                        <span class="think-num">01</span>
-                        <div>
-                            <h4>Understand the idea</h4>
-                            <p>We talk through your goals, your users, and what "done" actually looks like — before
-                                touching a stack.</p>
-                        </div>
-                    </div>
-                    <div class="think-step">
-                        <span class="think-num">02</span>
-                        <div>
-                            <h4>Shape the plan</h4>
-                            <p>I map the scope, architecture, and timeline into something realistic, with the risky
-                                parts flagged early.</p>
-                        </div>
-                    </div>
-                    <div class="think-step">
-                        <span class="think-num">03</span>
-                        <div>
-                            <h4>Build in the open</h4>
-                            <p>Regular check-ins and working previews, so there are no surprises when it's time to
-                                ship.</p>
-                        </div>
-                    </div>
-                    <div class="think-step">
-                        <span class="think-num">04</span>
-                        <div>
-                            <h4>Ship &amp; support</h4>
-                            <p>Deployed, monitored, and handed off with docs — plus support after launch when you
-                                need it.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="think-contact">
-                    <a href="mailto:rahatkarim5452@gmail.com"><span class="dot-status"></span>
-                        rahatkarim5452@gmail.com</a>
-                    <a href="#contact"><span class="dot-status"></span> Available for freelance work</a>
-                </div>
-            </div>
-
-            <form class="contact-form" id="contactForm">
-                <div class="form-row">
-                    <div class="form-field">
-                        <label for="firstName">First name <span class="req">*</span></label>
-                        <input type="text" id="firstName" name="firstName" placeholder="John" required>
-                    </div>
-                    <div class="form-field">
-                        <label for="lastName">Last name <span class="req">*</span></label>
-                        <input type="text" id="lastName" name="lastName" placeholder="Doe" required>
-                    </div>
-                </div>
-                <div class="form-row">
-                    <div class="form-field">
-                        <label for="email">Email <span class="req">*</span></label>
-                        <input type="email" id="email" name="email" placeholder="john@example.com" required>
-                    </div>
-                    <div class="form-field">
-                        <label for="phone">Phone <span class="req">*</span></label>
-                        <input type="tel" id="phone" name="phone" placeholder="+880 1XXX-XXXXXX" required>
-                    </div>
-                </div>
-                <div class="form-row">
-                    <div class="form-field form-field-full">
-                        <label for="country">Country <span class="req">*</span></label>
-                        <input type="text" id="country" name="country" placeholder="Your country" required>
-                    </div>
-                </div>
-                <div class="form-row">
-                    <div class="form-field form-field-full">
-                        <label for="message">Message</label>
-                        <textarea id="message" name="message"
-                            placeholder="Tell me a bit about your project..."></textarea>
-                    </div>
-                </div>
-                <button type="submit" class="btn-primary form-submit">Send message →</button>
-                <span class="form-status" id="formStatus"></span>
-            </form>
-        </div>
-    </div>
-</section>
-
-<!-- FOOTER -->
-<footer>
-    <div class="footer-glow"></div>
-    <div class="footer-cta">
-        <div class="footer-cta-inner">
-            <div class="footer-cta-text">
-                <span class="eyebrow"><i></i> Currently available</span>
-                <h3>Have a project in mind?<br><span>Let's build it together.</span></h3>
-                <p>Whether it's a full product, a landing page, or an API that needs to just work — I'd love to
-                    hear about it.</p>
-            </div>
-            <div class="footer-cta-actions">
-                <a href="#contact" class="btn-primary">Start a conversation →</a>
-                <small>Usually replies within 24 hours</small>
-            </div>
-        </div>
-    </div>
-    <div class="wrap footer-top">
-        <div class="footer-brand">
+    <!-- ============ NAVIGATION BAR ============ -->
+    <nav>
+        <div class="nav-inner">
             <a href="#home" class="brand">
                 <svg class="brand-logo" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
                     <defs>
-                        <linearGradient id="brandGradFooter" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <linearGradient id="brandGrad" x1="0%" y1="0%" x2="100%" y2="100%">
                             <stop offset="0%" stop-color="#7C74EC" />
                             <stop offset="45%" stop-color="#4EA8FF" />
                             <stop offset="100%" stop-color="#22D3EE" />
                         </linearGradient>
                     </defs>
-                    <rect x="1" y="1" width="30" height="30" rx="9" fill="url(#brandGradFooter)" />
+                    <rect x="1" y="1" width="30" height="30" rx="9" fill="url(#brandGrad)" />
                     <path d="M12 11 8 16l4 5" stroke="#0A0E1A" stroke-width="2.3" stroke-linecap="round"
                         stroke-linejoin="round" fill="none" />
                     <path d="M20 11l4 5-4 5" stroke="#0A0E1A" stroke-width="2.3" stroke-linecap="round"
@@ -602,67 +48,783 @@
                         class="brand-bracket">/&gt;</span></span><span class="brand-status-wrap"><i
                         class="brand-status"></i></span>
             </a>
-            <p>Full stack developer designing and shipping web products end to end. Open to remote work worldwide.
-            </p>
-            <div class="socials">
-                <a href="https://github.com/Rahat-Karim5452" aria-label="GitHub"><svg viewBox="0 0 24 24"
-                        fill="currentColor" width="16" height="16">
+            <ul class="nav-links">
+                <li><a href="#stack">Stack</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#tools">Tools</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#tour">Tour</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <a href="#contact" class="nav-cta">Let's talk</a>
+            <button class="theme-toggle" id="themeToggle" type="button" aria-label="Toggle night mode"
+                aria-pressed="false">
+                <svg class="icon-moon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                    <path
+                        d="M21.64 13a9 9 0 1 1-10.63-10.6 1 1 0 0 1 1.08 1.44A7 7 0 0 0 20.2 12.9a1 1 0 0 1 1.44 1.08Z" />
+                </svg>
+                <svg class="icon-sun" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                    <circle cx="12" cy="12" r="4.2" />
+                    <g stroke="currentColor" stroke-width="1.8" stroke-linecap="round">
                         <path
-                            d="M12 .5C5.73.5.5 5.73.5 12c0 5.08 3.29 9.39 7.86 10.91.57.11.78-.25.78-.55 0-.27-.01-1.16-.02-2.11-3.2.7-3.88-1.36-3.88-1.36-.52-1.33-1.28-1.69-1.28-1.69-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.18 1.76 1.18 1.03 1.76 2.69 1.25 3.35.96.1-.75.4-1.25.73-1.54-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.29 1.18-3.09-.12-.29-.51-1.46.11-3.05 0 0 .96-.31 3.15 1.18a10.9 10.9 0 0 1 5.74 0c2.19-1.49 3.15-1.18 3.15-1.18.62 1.59.23 2.76.11 3.05.74.8 1.18 1.83 1.18 3.09 0 4.42-2.69 5.39-5.25 5.68.41.36.78 1.08.78 2.17 0 1.56-.01 2.82-.01 3.2 0 .3.2.67.79.55A10.51 10.51 0 0 0 23.5 12C23.5 5.73 18.27.5 12 .5Z" />
-                    </svg></a>
-                <a href="https://www.linkedin.com/in/rahat-karim" aria-label="LinkedIn"><svg viewBox="0 0 24 24"
-                        fill="currentColor" width="16" height="16">
-                        <path
-                            d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.03-1.85-3.03-1.86 0-2.14 1.45-2.14 2.94v5.66H9.36V9h3.41v1.56h.05c.47-.9 1.63-1.85 3.36-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29ZM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12ZM7.12 20.45H3.56V9h3.56v11.45Z" />
-                    </svg></a>
-                <a href="https://www.facebook.com/share/19wnUYCAc4/" target="_blank" rel="noopener"
-                    aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16">
-                        <path
-                            d="M22 12.06C22 6.5 17.52 2 12 2S2 6.5 2 12.06c0 5.02 3.66 9.18 8.44 9.94v-7.03H7.9v-2.91h2.54V9.85c0-2.51 1.49-3.9 3.77-3.9 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56v1.89h2.78l-.44 2.91h-2.34V22c4.78-.76 8.44-4.92 8.44-9.94Z" />
-                    </svg></a>
-                <a href="https://x.com/KarimRahat10325" target="_blank" rel="noopener" aria-label="X (Twitter)"><svg
-                        viewBox="0 0 24 24" fill="currentColor" width="16" height="16">
-                        <path
-                            d="M18.9 2H22l-7.6 8.7L23.3 22h-7.1l-5.5-7.2L4.4 22H1.3l8.2-9.3L1 2h7.3l5 6.6L18.9 2Zm-1.25 18h1.75L7.5 3.9H5.6L17.65 20Z" />
-                    </svg></a>
-                <a href="mailto:rahatkarim5452@gmail.com" aria-label="Email"><svg viewBox="0 0 24 24"
-                        fill="currentColor" width="16" height="16">
-                        <path
-                            d="M2 4h20a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1Zm19 3.24-8.36 6.1a1 1 0 0 1-1.18 0L3 7.24V19h18V7.24ZM3.4 5l8.6 6.28L20.6 5H3.4Z" />
-                    </svg></a>
+                            d="M12 2v2.4M12 19.6V22M22 12h-2.4M4.4 12H2M19 5l-1.7 1.7M6.7 17.3 5 19M19 19l-1.7-1.7M6.7 6.7 5 5" />
+                    </g>
+                </svg>
+            </button>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false"
+                aria-controls="mobileNav">
+                <span></span>
+            </button>
+        </div>
+        <div class="mobile-nav" id="mobileNav">
+            <div class="mobile-nav-inner">
+                <a href="#stack">Stack</a>
+                <a href="#about">About</a>
+                <a href="#services">Services</a>
+                <a href="#tools">Tools</a>
+                <a href="#projects">Projects</a>
+                <a href="#tour">Tour</a>
+                <a href="#contact">Contact</a>
+                <a href="#contact" class="nav-cta">Let's talk</a>
             </div>
         </div>
-        <div class="footer-col">
-            <h4>Navigate</h4>
-            <a href="#home">Home</a>
-            <a href="#stack">Stack</a>
-            <a href="#about">About</a>
-            <a href="#services">Services</a>
-            <a href="#projects">Projects</a>
-        </div>
-        <div class="footer-col">
-            <h4>Services</h4>
-            <a href="#services">Frontend Development</a>
-            <a href="#services">Backend &amp; APIs</a>
-            <a href="#services">Full Stack Products</a>
-            <a href="#services">Deployment &amp; DevOps</a>
-        </div>
-        <div class="footer-col">
-            <h4>Get in touch</h4>
-            <a href="mailto:rahatkarim5452@gmail.com">rahatkarim5452@gmail.com</a>
-            <a href="#contact">Say hello →</a>
-            <span class="footer-status"><i></i> Available for freelance work</span>
-        </div>
-    </div>
-    <div class="wrap footer-bottom">
-        <span>© <span id="year"></span> Rahat Karim. Built with code &amp; coffee.</span>
-        <button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
-    </div>
-</footer>
+    </nav>
 
+    <!-- ============ HERO / INTRO SECTION ============ -->
+    <header class="hero" id="home">
+        <div class="wrap hero-grid">
+            <div>
+                <div class="eyebrow"><span class="dot"></span> AVAILABLE FOR WORK · OPEN TO REMOTE, WORLDWIDE</div>
+                <h1 class="name">Hi, I'm <span class="grad">Rahat</span><br>I build full stack products.</h1>
+                <p class="hero-tagline">A <span class="role-cycle">full stack developer</span> who designs, builds and
+                    ships web
+                    applications end to end — from <span style="color:var(--text)">database schema</span> to
+                    <span style="color:var(--text)">pixel-perfect interface</span>. Replace this line with your own
+                    story.
+                </p>
+                <div class="hero-actions">
+                    <a href="#projects" class="btn-primary">View my work →</a>
+                    <a href="#" class="btn-ghost">Download Resume</a>
+                </div>
+                <div class="socials">
+                    <a href="https://github.com/Rahat-Karim5452" aria-label="GitHub"><svg viewBox="0 0 24 24"
+                            fill="currentColor">
+                            <path
+                                d="M12 .5C5.73.5.5 5.73.5 12c0 5.08 3.29 9.39 7.86 10.91.57.11.78-.25.78-.55 0-.27-.01-1.16-.02-2.11-3.2.7-3.88-1.36-3.88-1.36-.52-1.33-1.28-1.69-1.28-1.69-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.18 1.76 1.18 1.03 1.76 2.69 1.25 3.35.96.1-.75.4-1.25.73-1.54-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.29 1.18-3.09-.12-.29-.51-1.46.11-3.05 0 0 .96-.31 3.15 1.18a10.9 10.9 0 0 1 5.74 0c2.19-1.49 3.15-1.18 3.15-1.18.62 1.59.23 2.76.11 3.05.74.8 1.18 1.83 1.18 3.09 0 4.42-2.69 5.39-5.25 5.68.41.36.78 1.08.78 2.17 0 1.56-.01 2.82-.01 3.2 0 .3.2.67.79.55A10.51 10.51 0 0 0 23.5 12C23.5 5.73 18.27.5 12 .5Z" />
+                        </svg></a>
+                    <a href="https://www.linkedin.com/in/rahat-karim" aria-label="LinkedIn"><svg viewBox="0 0 24 24"
+                            fill="currentColor">
+                            <path
+                                d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.03-1.85-3.03-1.86 0-2.14 1.45-2.14 2.94v5.66H9.36V9h3.41v1.56h.05c.47-.9 1.63-1.85 3.36-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29ZM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12ZM7.12 20.45H3.56V9h3.56v11.45Z" />
+                        </svg></a>
+                    <a href="https://www.facebook.com/share/19wnUYCAc4/" target="_blank" rel="noopener"
+                        aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M22 12.06C22 6.5 17.52 2 12 2S2 6.5 2 12.06c0 5.02 3.66 9.18 8.44 9.94v-7.03H7.9v-2.91h2.54V9.85c0-2.51 1.49-3.9 3.77-3.9 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56v1.89h2.78l-.44 2.91h-2.34V22c4.78-.76 8.44-4.92 8.44-9.94Z" />
+                        </svg></a>
+                    <a href="https://x.com/KarimRahat10325" target="_blank" rel="noopener" aria-label="X (Twitter)"><svg
+                            viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M18.9 2H22l-7.6 8.7L23.3 22h-7.1l-5.5-7.2L4.4 22H1.3l8.2-9.3L1 2h7.3l5 6.6L18.9 2Zm-1.25 18h1.75L7.5 3.9H5.6L17.65 20Z" />
+                        </svg></a>
+                    <a href="mailto:rahatkarim5452@gmail.com" aria-label="Email"><svg viewBox="0 0 24 24"
+                            fill="currentColor">
+                            <path
+                                d="M2 4h20a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1Zm19 3.24-8.36 6.1a1 1 0 0 1-1.18 0L3 7.24V19h18V7.24ZM3.4 5l8.6 6.28L20.6 5H3.4Z" />
+                        </svg></a>
+                </div>
+            </div>
 
-<!-- CUSTOM SCRIPT -->
-<script src="script.js"></script>
+            <div class="hero-photo-wrap">
+                <div class="photo-glow"></div>
+                <div class="photo-frame">
+                    <img src="./images/profile.jpeg" alt="Rahat">
+                </div>
+                <div class="chip chip-1">React</div>
+                <div class="chip chip-2">Node.js</div>
+                <div class="chip chip-3">PostgreSQL</div>
+            </div>
+        </div>
+    </header>
+
+    <!-- ============ TECH STACK SECTION ============ -->
+    <section id="stack">
+        <div class="wrap">
+            <div class="sec-head">
+                <div class="eyebrow"><span class="dot"></span> HOW I'M BUILT</div>
+                <h2>The stack, layer by layer.</h2>
+                <p>Every full stack app is exactly that — a stack. Here's what sits in each layer of mine, top to
+                    bottom.</p>
+            </div>
+
+            <div class="stack">
+                <div class="layer layer-1">
+                    <div class="layer-label">
+                        <span class="layer-idx">LAYER 01 — WHAT USERS SEE</span>
+                        <span class="layer-name">Frontend</span>
+                    </div>
+                    <div class="layer-techs">
+                        <span class="tech-pill">React</span>
+                        <span class="tech-pill">Next.js</span>
+                        <span class="tech-pill">TypeScript</span>
+                        <span class="tech-pill">Tailwind CSS</span>
+                        <span class="tech-pill">Redux</span>
+                    </div>
+                </div>
+                <div class="layer layer-2">
+                    <div class="layer-label">
+                        <span class="layer-idx">LAYER 02 — WHERE LOGIC LIVES</span>
+                        <span class="layer-name">Backend</span>
+                    </div>
+                    <div class="layer-techs">
+                        <span class="tech-pill">Node.js</span>
+                        <span class="tech-pill">Express</span>
+                        <span class="tech-pill">REST APIs</span>
+                        <span class="tech-pill">GraphQL</span>
+                    </div>
+                </div>
+                <div class="layer layer-3">
+                    <div class="layer-label">
+                        <span class="layer-idx">LAYER 03 — WHERE DATA LIVES</span>
+                        <span class="layer-name">Database</span>
+                    </div>
+                    <div class="layer-techs">
+                        <span class="tech-pill">PostgreSQL</span>
+                        <span class="tech-pill">MongoDB</span>
+                        <span class="tech-pill">Redis</span>
+                        <span class="tech-pill">Prisma</span>
+                    </div>
+                </div>
+                <div class="layer layer-4">
+                    <div class="layer-label">
+                        <span class="layer-idx">LAYER 04 — HOW IT SHIPS</span>
+                        <span class="layer-name">DevOps</span>
+                    </div>
+                    <div class="layer-techs">
+                        <span class="tech-pill">Docker</span>
+                        <span class="tech-pill">GitHub Actions</span>
+                        <span class="tech-pill">AWS</span>
+                        <span class="tech-pill">Vercel</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ ABOUT ME SECTION ============ -->
+    <section id="about">
+        <div class="wrap about-grid">
+            <div>
+                <div class="eyebrow"><span class="dot"></span> ABOUT ME</div>
+                <h2
+                    style="font-family:'Bricolage Grotesque',sans-serif;font-weight:800;font-size:clamp(1.9rem,3.4vw,2.6rem);margin-bottom:24px;letter-spacing:-.01em;">
+                    A short version of my story.</h2>
+                <div class="about-text">
+                    <p>Replace this paragraph with your own introduction. Talk about <strong>how you got into web
+                            development</strong>, what kind of problems you enjoy solving, and the type of products you
+                        like building — from idea to production.</p>
+                    <p>Mention the <strong>tools you reach for first</strong>, a project you're proud of, and what
+                        you're currently learning. Keep it honest and specific — recruiters and clients remember
+                        details, not buzzwords.</p>
+                </div>
+            </div>
+            <div class="stat-row">
+                <div class="stat"><b>3+</b><span>YEARS EXPERIENCE</span></div>
+                <div class="stat"><b>20+</b><span>PROJECTS SHIPPED</span></div>
+                <div class="stat"><b>10+</b><span>TECHNOLOGIES</span></div>
+            </div>
+        </div>
+    </section>
+
+    <svg class="story-flyer" viewBox="0 0 100 160" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <defs>
+            <linearGradient id="chuteGrad2" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0%" stop-color="#7C74EC" />
+                <stop offset="45%" stop-color="#4EA8FF" />
+                <stop offset="78%" stop-color="#22D3EE" />
+                <stop offset="100%" stop-color="#7CFFCB" />
+            </linearGradient>
+        </defs>
+        <!-- parachute canopy -->
+        <path class="chute-canopy" d="M50 4 C22 4 4 26 4 50 C16 42 26 38 50 38 C74 38 84 42 96 50 C96 26 78 4 50 4Z" />
+        <path class="chute-lines" d="M14 46 Q30 30 50 38" />
+        <path class="chute-lines" d="M86 46 Q70 30 50 38" />
+        <!-- suspension lines to coder -->
+        <line class="chute-lines" x1="14" y1="46" x2="38" y2="96" />
+        <line class="chute-lines" x1="32" y1="42" x2="44" y2="96" />
+        <line class="chute-lines" x1="68" y1="42" x2="56" y2="96" />
+        <line class="chute-lines" x1="86" y1="46" x2="62" y2="96" />
+        <!-- coder body -->
+        <circle class="coder-body" cx="50" cy="88" r="9" />
+        <rect class="coder-body" x="40" y="96" width="20" height="26" rx="6" />
+        <!-- laptop -->
+        <g transform="translate(50 108) rotate(-10)">
+            <rect class="laptop" x="-13" y="-2" width="26" height="4" rx="1" />
+            <rect class="laptop-screen" x="-11" y="-14" width="22" height="12" rx="1.5" />
+        </g>
+        <!-- arms holding laptop -->
+        <line class="chute-lines" x1="41" y1="100" x2="37" y2="110" />
+        <line class="chute-lines" x1="59" y1="100" x2="63" y2="110" />
+        <!-- legs -->
+        <line class="chute-lines" x1="44" y1="122" x2="40" y2="140" />
+        <line class="chute-lines" x1="56" y1="122" x2="60" y2="140" />
+    </svg>
+
+    <!-- ============ SERVICES OFFERED SECTION ============ -->
+    <section id="services">
+        <div class="wrap">
+            <div class="sec-head">
+                <div class="eyebrow"><span class="dot"></span> WHAT I DO</div>
+                <h2>Services I offer.</h2>
+                <p>From first wireframe to production deploy — here's how I can help move your product forward.</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <span class="service-num">01</span>
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="8 6 2 12 8 18"></polyline>
+                            <polyline points="16 6 22 12 16 18"></polyline>
+                        </svg>
+                    </div>
+                    <h3>Frontend Development</h3>
+                    <p>Responsive, accessible interfaces built with React, Next.js and modern CSS — pixel-accurate and
+                        fast to load.</p>
+                </div>
+                <div class="service-card">
+                    <span class="service-num">02</span>
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M4 4h16v6H4z"></path>
+                            <path d="M4 14h16v6H4z"></path>
+                            <circle cx="8" cy="7" r=".6" fill="currentColor" stroke="none"></circle>
+                            <circle cx="8" cy="17" r=".6" fill="currentColor" stroke="none"></circle>
+                        </svg>
+                    </div>
+                    <h3>Backend &amp; APIs</h3>
+                    <p>Node.js and Express services with clean REST or GraphQL APIs, auth, and sensible data modeling.
+                    </p>
+                </div>
+                <div class="service-card">
+                    <span class="service-num">03</span>
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <ellipse cx="12" cy="5" rx="8" ry="3"></ellipse>
+                            <path d="M4 5v14c0 1.66 3.58 3 8 3s8-1.34 8-3V5"></path>
+                            <path d="M4 12c0 1.66 3.58 3 8 3s8-1.34 8-3"></path>
+                        </svg>
+                    </div>
+                    <h3>Full Stack Products</h3>
+                    <p>End-to-end builds that connect frontend, backend and database into one coherent, maintainable
+                        product.</p>
+                </div>
+                <div class="service-card">
+                    <span class="service-num">04</span>
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 2 4 6v6c0 5 3.4 8.4 8 10 4.6-1.6 8-5 8-10V6l-8-4Z"></path>
+                            <path d="m9 12 2 2 4-4"></path>
+                        </svg>
+                    </div>
+                    <h3>Deployment &amp; DevOps</h3>
+                    <p>Dockerized, CI/CD-backed deploys on AWS or Vercel — shipping code that stays shipped.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ TOOLS / TECHNOLOGIES SECTION ============ -->
+    <section id="tools">
+        <div class="wrap">
+            <div class="sec-head">
+                <div class="eyebrow"><span class="dot"></span> UNDER THE HOOD</div>
+                <h2>Exploring the tools behind my design.</h2>
+                <p>The languages, frameworks and platforms I reach for when turning an idea into a working product.</p>
+            </div>
+            <div class="tools-grid">
+                <div class="tool-card" style="--delay:0s">
+                    <i class="devicon-html5-plain colored tool-icon"></i>
+                    <span>HTML5</span>
+                </div>
+                <div class="tool-card" style="--delay:.2s">
+                    <i class="devicon-css3-plain colored tool-icon"></i>
+                    <span>CSS3</span>
+                </div>
+                <div class="tool-card" style="--delay:.4s">
+                    <i class="devicon-tailwindcss-plain colored tool-icon"></i>
+                    <span>Tailwind CSS</span>
+                </div>
+                <div class="tool-card" style="--delay:.6s">
+                    <i class="devicon-javascript-plain colored tool-icon"></i>
+                    <span>JavaScript</span>
+                </div>
+                <div class="tool-card" style="--delay:.8s">
+                    <i class="devicon-react-original colored tool-icon"></i>
+                    <span>React</span>
+                </div>
+                <div class="tool-card" style="--delay:1s">
+                    <i class="devicon-firebase-plain colored tool-icon"></i>
+                    <span>Firebase</span>
+                </div>
+                <div class="tool-card" style="--delay:1.2s">
+                    <i class="devicon-nodejs-plain colored tool-icon"></i>
+                    <span>Node.js</span>
+                </div>
+                <div class="tool-card" style="--delay:1.4s">
+                    <i class="devicon-express-original tool-icon tool-icon-invert"></i>
+                    <span>Express.js</span>
+                </div>
+                <div class="tool-card" style="--delay:1.6s">
+                    <i class="devicon-mongodb-plain colored tool-icon"></i>
+                    <span>MongoDB</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ PROJECTS / PORTFOLIO SECTION ============ -->
+    <section id="projects">
+        <div class="wrap">
+            <div class="sec-head">
+                <div class="eyebrow"><span class="dot"></span> SELECTED WORK</div>
+                <h2>Projects worth showing.</h2>
+                <p>A couple of builds worth a closer look — live and ready to explore.</p>
+            </div>
+            <div class="project-grid">
+                <div class="card">
+                    <div class="card-cover cover-1"><img
+                            src="https://s.wordpress.com/mshots/v1/https%3A%2F%2Frahat-karim5452.github.io%2FAssignment-01-DevConf-2026%2F?w=600&h=400"
+                            alt="DevConf 2026 screenshot" loading="lazy"></div>
+                    <div class="card-body">
+                        <h3>DevConf 2026</h3>
+                        <p>A conference landing page assignment focused on clean layout, responsive design, and polished
+                            UI details.</p>
+                        <div class="card-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+                        <div class="card-links"><a href="https://rahat-karim5452.github.io/Assignment-01-DevConf-2026/"
+                                target="_blank" rel="noopener">Live site →</a><a
+                                href="https://github.com/Rahat-Karim5452/Assignment-01-DevConf-2026" target="_blank"
+                                rel="noopener">Source code →</a></div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-cover cover-2"><img
+                            src="https://s.wordpress.com/mshots/v1/https%3A%2F%2Frahat-karim5452.github.io%2FMindCare-Project%2F?w=600&h=400"
+                            alt="MindCare screenshot" loading="lazy"></div>
+                    <div class="card-body">
+                        <h3>MindCare</h3>
+                        <p>A mental wellness platform concept designed to make support and resources feel approachable
+                            and calm.</p>
+                        <div class="card-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+                        <div class="card-links"><a href="https://rahat-karim5452.github.io/MindCare-Project/"
+                                target="_blank" rel="noopener">Live site →</a><a
+                                href="https://github.com/Rahat-Karim5452/MindCare-Project" target="_blank"
+                                rel="noopener">Source code →</a></div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-cover cover-3"><img
+                            src="https://s.wordpress.com/mshots/v1/https%3A%2F%2Frahat-karim5452.github.io%2FBrewCorner-Cafe%2F?w=600&h=400"
+                            alt="BrewCorner Cafe screenshot" loading="lazy"></div>
+                    <div class="card-body">
+                        <h3>BrewCorner Cafe</h3>
+                        <p>A cozy cafe website concept with a warm, inviting design showcasing a menu, atmosphere, and
+                            brand story.</p>
+                        <div class="card-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+                        <div class="card-links"><a href="https://rahat-karim5452.github.io/BrewCorner-Cafe/"
+                                target="_blank" rel="noopener">Live site →</a><a
+                                href="https://github.com/Rahat-Karim5452/BrewCorner-Cafe" target="_blank"
+                                rel="noopener">Source code →</a></div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-cover cover-4"><img
+                            src="https://s.wordpress.com/mshots/v1/https%3A%2F%2Frahat-karim5452.github.io%2FFIFA-WORLD-CUP-2026%2F?w=600&h=400"
+                            alt="FIFA World Cup 2026 screenshot" loading="lazy"></div>
+                    <div class="card-body">
+                        <h3>FIFA World Cup 2026</h3>
+                        <p>A tournament-themed site built around the 2026 World Cup, featuring dynamic layout and
+                            event-driven design.</p>
+                        <div class="card-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+                        <div class="card-links"><a href="https://rahat-karim5452.github.io/FIFA-WORLD-CUP-2026/"
+                                target="_blank" rel="noopener">Live site →</a><a
+                                href="https://github.com/Rahat-Karim5452/FIFA-WORLD-CUP-2026" target="_blank"
+                                rel="noopener">Source code →</a></div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-cover cover-5"><img
+                            src="https://s.wordpress.com/mshots/v1/https%3A%2F%2Frahat-karim5452.github.io%2FPersonal-Portfolio%2F?w=600&h=400"
+                            alt="Personal Portfolio screenshot" loading="lazy"></div>
+                    <div class="card-body">
+                        <h3>Personal Portfolio</h3>
+                        <p>This very site — a full stack developer portfolio built to showcase my stack, services,
+                            and selected work in one polished, animated page.</p>
+                        <div class="card-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+                        <div class="card-links"><a href="https://rahat-karim5452.github.io/Personal-Portfolio/"
+                                target="_blank" rel="noopener">Live site →</a><a
+                                href="https://github.com/Rahat-Karim5452/Personal-Portfolio" target="_blank"
+                                rel="noopener">Source code →</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ TOUR / DEMO VIDEO SECTION ============ -->
+    <section id="tour">
+        <div class="wrap">
+            <div class="sec-head">
+                <div class="eyebrow"><span class="dot"></span> WATCH</div>
+                <h2>Take a quick tour.</h2>
+                <p>A short walkthrough covering who I am, what I build, and how I work.</p>
+            </div>
+            <div class="tour-wrap">
+                <div class="tour-video">
+                    <!-- Option A: your own video file -->
+                    <video controls poster="your-video-poster.jpg">
+                        <source src="your-tour-video.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+
+                    <!-- Option B: embed a YouTube video instead — delete the <video> block above
+                         and uncomment this iframe, replacing YOUR_VIDEO_ID
+                    <iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID"
+                        title="Portfolio tour video" allowfullscreen
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
+                    -->
+                </div>
+                <div class="tour-info">
+                    <h3>What you'll see</h3>
+                    <p>A quick, friendly walkthrough of my background, my process, and a peek at how I approach
+                        building full stack products.</p>
+                    <ul class="tour-points">
+                        <li>Quick intro &amp; what I do</li>
+                        <li>How I approach a new project</li>
+                        <li>A look at a few builds in action</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ CONTACT FORM SECTION ============ -->
+    <section id="contact">
+        <div class="wrap">
+            <div class="sec-head">
+                <div class="eyebrow"><span class="dot"></span> GET IN TOUCH</div>
+                <h2>Let's talk for your next project.</h2>
+                <p>Share a few details below and what's on your mind — I read every message and reply within a day or
+                    two.</p>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-think">
+                    <h3>How I think about a new project.</h3>
+                    <p>Before any code gets written, here's the process I walk through with every client — so we're
+                        building the right thing, not just building fast.</p>
+                    <div class="think-steps">
+                        <div class="think-step">
+                            <span class="think-num">01</span>
+                            <div>
+                                <h4>Understand the idea</h4>
+                                <p>We talk through your goals, your users, and what "done" actually looks like — before
+                                    touching a stack.</p>
+                            </div>
+                        </div>
+                        <div class="think-step">
+                            <span class="think-num">02</span>
+                            <div>
+                                <h4>Shape the plan</h4>
+                                <p>I map the scope, architecture, and timeline into something realistic, with the risky
+                                    parts flagged early.</p>
+                            </div>
+                        </div>
+                        <div class="think-step">
+                            <span class="think-num">03</span>
+                            <div>
+                                <h4>Build in the open</h4>
+                                <p>Regular check-ins and working previews, so there are no surprises when it's time to
+                                    ship.</p>
+                            </div>
+                        </div>
+                        <div class="think-step">
+                            <span class="think-num">04</span>
+                            <div>
+                                <h4>Ship &amp; support</h4>
+                                <p>Deployed, monitored, and handed off with docs — plus support after launch when you
+                                    need it.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="think-contact">
+                        <a href="mailto:rahatkarim5452@gmail.com"><span class="dot-status"></span>
+                            rahatkarim5452@gmail.com</a>
+                        <a href="#contact"><span class="dot-status"></span> Available for freelance work</a>
+                    </div>
+                </div>
+
+                <form class="contact-form" id="contactForm">
+                    <div class="form-row">
+                        <div class="form-field">
+                            <label for="firstName">First name <span class="req">*</span></label>
+                            <input type="text" id="firstName" name="firstName" placeholder="John" required>
+                        </div>
+                        <div class="form-field">
+                            <label for="lastName">Last name <span class="req">*</span></label>
+                            <input type="text" id="lastName" name="lastName" placeholder="Doe" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-field">
+                            <label for="email">Email <span class="req">*</span></label>
+                            <input type="email" id="email" name="email" placeholder="john@example.com" required>
+                        </div>
+                        <div class="form-field">
+                            <label for="phone">Phone <span class="req">*</span></label>
+                            <input type="tel" id="phone" name="phone" placeholder="+880 1XXX-XXXXXX" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-field form-field-full">
+                            <label for="country">Country <span class="req">*</span></label>
+                            <input type="text" id="country" name="country" placeholder="Your country" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-field form-field-full">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message"
+                                placeholder="Tell me a bit about your project..."></textarea>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn-primary form-submit">Send message →</button>
+                    <span class="form-status" id="formStatus"></span>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ FOOTER SECTION ============ -->
+    <footer>
+        <div class="footer-glow"></div>
+
+        <svg class="footer-flyer" viewBox="0 0 100 160" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <defs>
+                <linearGradient id="chuteGrad" x1="0" y1="0" x2="1" y2="1">
+                    <stop offset="0%" stop-color="#7C74EC" />
+                    <stop offset="45%" stop-color="#4EA8FF" />
+                    <stop offset="78%" stop-color="#22D3EE" />
+                    <stop offset="100%" stop-color="#7CFFCB" />
+                </linearGradient>
+            </defs>
+            <!-- parachute canopy -->
+            <path class="chute-canopy"
+                d="M50 4 C22 4 4 26 4 50 C16 42 26 38 50 38 C74 38 84 42 96 50 C96 26 78 4 50 4Z" />
+            <path class="chute-lines" d="M14 46 Q30 30 50 38" />
+            <path class="chute-lines" d="M86 46 Q70 30 50 38" />
+            <!-- suspension lines to coder -->
+            <line class="chute-lines" x1="14" y1="46" x2="38" y2="96" />
+            <line class="chute-lines" x1="32" y1="42" x2="44" y2="96" />
+            <line class="chute-lines" x1="68" y1="42" x2="56" y2="96" />
+            <line class="chute-lines" x1="86" y1="46" x2="62" y2="96" />
+            <!-- coder body -->
+            <circle class="coder-body" cx="50" cy="88" r="9" />
+            <rect class="coder-body" x="40" y="96" width="20" height="26" rx="6" />
+            <!-- laptop -->
+            <g transform="translate(50 108) rotate(-10)">
+                <rect class="laptop" x="-13" y="-2" width="26" height="4" rx="1" />
+                <rect class="laptop-screen" x="-11" y="-14" width="22" height="12" rx="1.5" />
+            </g>
+            <!-- arms holding laptop -->
+            <line class="chute-lines" x1="41" y1="100" x2="37" y2="110" />
+            <line class="chute-lines" x1="59" y1="100" x2="63" y2="110" />
+            <!-- legs -->
+            <line class="chute-lines" x1="44" y1="122" x2="40" y2="140" />
+            <line class="chute-lines" x1="56" y1="122" x2="60" y2="140" />
+        </svg>
+
+        <div class="spiderweb-scene" aria-hidden="true">
+            <svg class="spiderweb-svg" viewBox="0 0 220 220" xmlns="http://www.w3.org/2000/svg">
+                <g class="web-strands">
+                    <line x1="220" y1="0" x2="20" y2="0" />
+                    <line x1="220" y1="0" x2="26.8" y2="51.8" />
+                    <line x1="220" y1="0" x2="46.8" y2="100" />
+                    <line x1="220" y1="0" x2="78.6" y2="141.4" />
+                    <line x1="220" y1="0" x2="120" y2="173.2" />
+                    <line x1="220" y1="0" x2="168.2" y2="193.2" />
+                    <line x1="220" y1="0" x2="220" y2="200" />
+                    <path d="M 175 0 L 176.5 11.6 L 181 22.5 L 188.2 31.8 L 197.5 39 L 208.4 43.5 L 220 45" />
+                    <path d="M 135 0 L 137.9 22 L 146.4 42.5 L 159.9 60.1 L 177.5 73.6 L 198 82.1 L 220 85" />
+                    <path d="M 95 0 L 99.3 32.4 L 111.7 62.5 L 131.6 88.4 L 157.5 108.3 L 187.6 120.7 L 220 125" />
+                    <path d="M 55 0 L 60.6 42.7 L 77.1 82.5 L 103.3 116.7 L 137.5 142.9 L 177.3 159.4 L 220 165" />
+                </g>
+            </svg>
+            <div class="spider">
+                <svg viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                        <linearGradient id="spiderGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" stop-color="#7C74EC" />
+                            <stop offset="50%" stop-color="#4EA8FF" />
+                            <stop offset="100%" stop-color="#7CFFCB" />
+                        </linearGradient>
+                    </defs>
+                    <g class="spider-legs" stroke="url(#spiderGrad)" stroke-width="1" stroke-linecap="round"
+                        fill="none">
+                        <path d="M8 8 C5 6.5 3 6 1.2 6.8" />
+                        <path d="M8 9.5 C4.6 9.2 2.3 9.6 0.8 10.8" />
+                        <path d="M8 11 C4.8 12 2.7 13.2 1.4 15" />
+                        <path d="M8.5 12.3 C6 14 4.6 15.8 4 18" />
+                        <path d="M12 8 C15 6.5 17 6 18.8 6.8" />
+                        <path d="M12 9.5 C15.4 9.2 17.7 9.6 19.2 10.8" />
+                        <path d="M12 11 C15.2 12 17.3 13.2 18.6 15" />
+                        <path d="M11.5 12.3 C14 14 15.4 15.8 16 18" />
+                    </g>
+                    <ellipse cx="10" cy="12.3" rx="2.9" ry="3.6" fill="url(#spiderGrad)" />
+                    <circle cx="10" cy="7" r="1.9" fill="url(#spiderGrad)" />
+                </svg>
+            </div>
+        </div>
+        <div class="spiderweb-scene corner-bl" aria-hidden="true">
+            <svg class="spiderweb-svg" viewBox="0 0 220 220" xmlns="http://www.w3.org/2000/svg">
+                <g class="web-strands">
+                    <line x1="220" y1="0" x2="20" y2="0" />
+                    <line x1="220" y1="0" x2="26.8" y2="51.8" />
+                    <line x1="220" y1="0" x2="46.8" y2="100" />
+                    <line x1="220" y1="0" x2="78.6" y2="141.4" />
+                    <line x1="220" y1="0" x2="120" y2="173.2" />
+                    <line x1="220" y1="0" x2="168.2" y2="193.2" />
+                    <line x1="220" y1="0" x2="220" y2="200" />
+                    <path d="M 175 0 L 176.5 11.6 L 181 22.5 L 188.2 31.8 L 197.5 39 L 208.4 43.5 L 220 45" />
+                    <path d="M 135 0 L 137.9 22 L 146.4 42.5 L 159.9 60.1 L 177.5 73.6 L 198 82.1 L 220 85" />
+                    <path d="M 95 0 L 99.3 32.4 L 111.7 62.5 L 131.6 88.4 L 157.5 108.3 L 187.6 120.7 L 220 125" />
+                    <path d="M 55 0 L 60.6 42.7 L 77.1 82.5 L 103.3 116.7 L 137.5 142.9 L 177.3 159.4 L 220 165" />
+                </g>
+            </svg>
+            <div class="spider">
+                <svg viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                        <linearGradient id="spiderGradBL" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" stop-color="#7C74EC" />
+                            <stop offset="50%" stop-color="#4EA8FF" />
+                            <stop offset="100%" stop-color="#7CFFCB" />
+                        </linearGradient>
+                    </defs>
+                    <g class="spider-legs" stroke="url(#spiderGradBL)" stroke-width="1" stroke-linecap="round"
+                        fill="none">
+                        <path d="M8 8 C5 6.5 3 6 1.2 6.8" />
+                        <path d="M8 9.5 C4.6 9.2 2.3 9.6 0.8 10.8" />
+                        <path d="M8 11 C4.8 12 2.7 13.2 1.4 15" />
+                        <path d="M8.5 12.3 C6 14 4.6 15.8 4 18" />
+                        <path d="M12 8 C15 6.5 17 6 18.8 6.8" />
+                        <path d="M12 9.5 C15.4 9.2 17.7 9.6 19.2 10.8" />
+                        <path d="M12 11 C15.2 12 17.3 13.2 18.6 15" />
+                        <path d="M11.5 12.3 C14 14 15.4 15.8 16 18" />
+                    </g>
+                    <ellipse cx="10" cy="12.3" rx="2.9" ry="3.6" fill="url(#spiderGradBL)" />
+                    <circle cx="10" cy="7" r="1.9" fill="url(#spiderGradBL)" />
+                </svg>
+            </div>
+        </div>
+        <div class="footer-cta">
+            <div class="footer-cta-inner">
+                <div class="footer-cta-text">
+                    <span class="eyebrow"><i></i> Currently available</span>
+                    <h3>Have a project in mind?<br><span>Let's build it together.</span></h3>
+                    <p>Whether it's a full product, a landing page, or an API that needs to just work — I'd love to
+                        hear about it.</p>
+                </div>
+                <div class="footer-cta-actions">
+                    <a href="#contact" class="btn-primary">Start a conversation →</a>
+                    <small>Usually replies within 24 hours</small>
+                </div>
+            </div>
+        </div>
+        <div class="wrap footer-top">
+            <div class="footer-brand">
+                <a href="#home" class="brand">
+                    <svg class="brand-logo" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                        <defs>
+                            <linearGradient id="brandGradFooter" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" stop-color="#7C74EC" />
+                                <stop offset="45%" stop-color="#4EA8FF" />
+                                <stop offset="100%" stop-color="#22D3EE" />
+                            </linearGradient>
+                        </defs>
+                        <rect x="1" y="1" width="30" height="30" rx="9" fill="url(#brandGradFooter)" />
+                        <path d="M12 11 8 16l4 5" stroke="#0A0E1A" stroke-width="2.3" stroke-linecap="round"
+                            stroke-linejoin="round" fill="none" />
+                        <path d="M20 11l4 5-4 5" stroke="#0A0E1A" stroke-width="2.3" stroke-linecap="round"
+                            stroke-linejoin="round" fill="none" />
+                        <path d="M17.5 9.5 14.5 22.5" stroke="#0A0E1A" stroke-width="2.1" stroke-linecap="round"
+                            fill="none" />
+                    </svg>
+                    <span class="brand-name"><span class="brand-bracket">&lt;</span>Rahat<span
+                            class="brand-bracket">/&gt;</span></span><span class="brand-status-wrap"><i
+                            class="brand-status"></i></span>
+                </a>
+                <p>Full stack developer designing and shipping web products end to end. Open to remote work worldwide.
+                </p>
+                <div class="socials">
+                    <a href="https://github.com/Rahat-Karim5452" aria-label="GitHub"><svg viewBox="0 0 24 24"
+                            fill="currentColor" width="16" height="16">
+                            <path
+                                d="M12 .5C5.73.5.5 5.73.5 12c0 5.08 3.29 9.39 7.86 10.91.57.11.78-.25.78-.55 0-.27-.01-1.16-.02-2.11-3.2.7-3.88-1.36-3.88-1.36-.52-1.33-1.28-1.69-1.28-1.69-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.18 1.76 1.18 1.03 1.76 2.69 1.25 3.35.96.1-.75.4-1.25.73-1.54-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.29 1.18-3.09-.12-.29-.51-1.46.11-3.05 0 0 .96-.31 3.15 1.18a10.9 10.9 0 0 1 5.74 0c2.19-1.49 3.15-1.18 3.15-1.18.62 1.59.23 2.76.11 3.05.74.8 1.18 1.83 1.18 3.09 0 4.42-2.69 5.39-5.25 5.68.41.36.78 1.08.78 2.17 0 1.56-.01 2.82-.01 3.2 0 .3.2.67.79.55A10.51 10.51 0 0 0 23.5 12C23.5 5.73 18.27.5 12 .5Z" />
+                        </svg></a>
+                    <a href="https://www.linkedin.com/in/rahat-karim" aria-label="LinkedIn"><svg viewBox="0 0 24 24"
+                            fill="currentColor" width="16" height="16">
+                            <path
+                                d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.03-1.85-3.03-1.86 0-2.14 1.45-2.14 2.94v5.66H9.36V9h3.41v1.56h.05c.47-.9 1.63-1.85 3.36-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29ZM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12ZM7.12 20.45H3.56V9h3.56v11.45Z" />
+                        </svg></a>
+                    <a href="https://www.facebook.com/share/19wnUYCAc4/" target="_blank" rel="noopener"
+                        aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16">
+                            <path
+                                d="M22 12.06C22 6.5 17.52 2 12 2S2 6.5 2 12.06c0 5.02 3.66 9.18 8.44 9.94v-7.03H7.9v-2.91h2.54V9.85c0-2.51 1.49-3.9 3.77-3.9 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56v1.89h2.78l-.44 2.91h-2.34V22c4.78-.76 8.44-4.92 8.44-9.94Z" />
+                        </svg></a>
+                    <a href="https://x.com/KarimRahat10325" target="_blank" rel="noopener" aria-label="X (Twitter)"><svg
+                            viewBox="0 0 24 24" fill="currentColor" width="16" height="16">
+                            <path
+                                d="M18.9 2H22l-7.6 8.7L23.3 22h-7.1l-5.5-7.2L4.4 22H1.3l8.2-9.3L1 2h7.3l5 6.6L18.9 2Zm-1.25 18h1.75L7.5 3.9H5.6L17.65 20Z" />
+                        </svg></a>
+                    <a href="mailto:rahatkarim5452@gmail.com" aria-label="Email"><svg viewBox="0 0 24 24"
+                            fill="currentColor" width="16" height="16">
+                            <path
+                                d="M2 4h20a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1Zm19 3.24-8.36 6.1a1 1 0 0 1-1.18 0L3 7.24V19h18V7.24ZM3.4 5l8.6 6.28L20.6 5H3.4Z" />
+                        </svg></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>Navigate</h4>
+                <a href="#home">Home</a>
+                <a href="#stack">Stack</a>
+                <a href="#about">About</a>
+                <a href="#services">Services</a>
+                <a href="#projects">Projects</a>
+            </div>
+            <div class="footer-col">
+                <h4>Services</h4>
+                <a href="#services">Frontend Development</a>
+                <a href="#services">Backend &amp; APIs</a>
+                <a href="#services">Full Stack Products</a>
+                <a href="#services">Deployment &amp; DevOps</a>
+            </div>
+            <div class="footer-col">
+                <h4>Get in touch</h4>
+                <a href="mailto:rahatkarim5452@gmail.com">rahatkarim5452@gmail.com</a>
+                <a href="#contact">Say hello →</a>
+                <span class="footer-status"><i></i> Available for freelance work</span>
+            </div>
+        </div>
+        <div class="wrap footer-bottom">
+            <span>© <span id="year"></span> Rahat Karim. Built with code &amp; coffee.</span>
+            <button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
+        </div>
+    </footer>
+    <!-- ============ JavaScript Link================== -->
+    <script src="./script.js"></script>
 
 </body>
 
