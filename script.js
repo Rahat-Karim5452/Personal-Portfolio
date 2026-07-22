@@ -1,9 +1,3 @@
-/* ================================================================
-   Rahat — Full Stack Developer Portfolio
-   Main JavaScript
-   ================================================================ */
-
-// ============================================
 // SET CURRENT YEAR IN FOOTER
 // ============================================
 document.getElementById("year").textContent = new Date().getFullYear();
