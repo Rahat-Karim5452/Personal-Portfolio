@@ -2,11 +2,11 @@
 // ============================================
 document.getElementById("year").textContent = new Date().getFullYear();
 
-// ============================================
+// ===========================================
 // NIGHT MODE TOGGLE
 // Switches the site to a darker theme and
 // remembers the choice in localStorage
-// ============================================
+// ===========================================
 // night mode toggle
 (function () {
   const root = document.documentElement;
